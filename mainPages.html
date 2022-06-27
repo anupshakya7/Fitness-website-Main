@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mainPages.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/fitness.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>GYM Website</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="main-head">
+                <img src="./img/logo.png" id="logo" alt="logo">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#home" class="links">Home</a></li>
+                        <li><a href="#about" class="links">About Us</a></li>
+                        <li><a href="#fitness" class="links">Fitness Calculator</a></li>
+                        <li><a href="#contact" class="links">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="contact-side">
+                    <button id="call_us_now">Call Us Now</button>
+                    <button id="email_us">Email Us</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <div class="homePage">
+            <h1>Join the best gym of Patan now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="Name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Age" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Number" placeholder="Enter your Phone Number">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+
+    </section>
+    <section id="about">
+        <div class="main">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <h5>Developer<span> & Designer </span></h5>
+                <p> A person should have more developed knowledge of web design. Let’s just quickly recap what a
+                    person
+                    has learned. A difference between a web developer and web designer is bigger than you think. A
+                    designer brings a brand’s idea into an on-screen reality and knows exactly what the specific
+                    audience will enjoy.
+                    A developer is a person who builds the site’s core structure using the coding languages to
+                    construct
+                    logical, programmatic websites. However, it is just like mustard and ketchup on some food.
+                    Sometimes
+                    a person needs both to have the best experience. When building a website from nothing, a person
+                    needs a web developer to build the foundation and web designers to make it look and feel the way
+                    you
+                    and more importantly a user need.</p>
+                <button type="button">Let's Talk </button>
+            </div>
+    </section>
+
+    <section id="fitness">
+        <h2>Fitness Calculator</h2>
+    </section>
+    <section id="contact">
+
+        <div class="container1">
+            <h1>Contact Us</h2>
+                <p>A gym is a place where people go to train and exercise, but also to unwind, socialize, and recharge.
+                    Therefore, a good gym is a facility that promotes physical activity, provides a safe, functional,
+                    and
+                    comfortable workout environment, and creates a pleasant and enjoyable atmosphere for recreation and
+                    socialization.</p>
+                <div class="contact-box">
+                    <div class="contact-left">
+                        <h3>Send your Request</h3>
+                        <form>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Enter your Name">
+                                    <label>Phone</label>
+                                    <input type="text" placeholder="Enter your phone number">
+                                    <label>Email</label>
+                                    <input type="text" placeholder="Enter your email address">
+                                    <label>Subject</label>
+                                    <input type="text" placeholder="Enter your Subject">
+                                </div>
+                            </div>
+                            <label>Message</label>
+                            <textarea rows="10" placeholder="Your Message"></textarea>
+                            <button class="sendContact" type="submit">Send</button>
+                        </form>
+                    </div>
+                    <div class="contact-right">
+                        <h3>Reach Us</h3>
+                        <table>
+                            <tr>
+                                <td>Email</td>
+                                <td>contact@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>98458474122</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>Banglamukhi, Lalitpur</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <script>
+        const li = document.querySelectorAll(".links");
+        const section = document.querySelectorAll("section");
+
+
+        function activeMenu() {
+            let length = section.length;
+            while (--length && window.scrollY + 97 < section[length].offsetTop) {
+
+            }
+            li.forEach(ltx => ltx.classList.remove("active"));
+            li[length].classList.add("active");
+        }
+        activeMenu();
+        window.addEventListener("scroll", activeMenu);
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    padding: 8px 20px;
+    background: #240303;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-head #logo {
+    width: 80px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    padding: 5px 10px;
+    border: none;
+    display: inline-block;
+    transform: all linear 0.5s;
+    margin-right: 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.contact-side #call_us_now {
+    box-sizing: border-box;
+    background-color: #f9004d;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-side #call_us_now:hover {
+    background: #240303;
+    border: 2px solid #f9004d;
+    color: #fff;
+}
+
+.contact-side #email_us {
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-side #email_us:hover {
+    background: #240303;
+    border: 2px solid green;
+    color: #fff;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+section h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.9;
+    color: #fff;
+    text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.12)), url(../img/bg.jpg) no-repeat center center/cover;
+}
+
+#about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.12)), url(../img/about.jpg) no-repeat center center/cover;
+}
+
+#fitness {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.12)), url(../img/fitnesscal.jpg) no-repeat center center/cover;
+}
+
+#contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.12)), url(../img/contact.jpg) no-repeat center center/cover;
+}
+
+.active {
+    background: orangered;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
